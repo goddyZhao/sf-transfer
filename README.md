@@ -1,5 +1,6 @@
 # sf-transfer
-
+  Combo rule transfer for SuccessFactors project. Transfered fule file is for [Nproxy](http://goddyzhao.me/nproxy/)
+  
 ## Installation
 
     npm install -g sf-transfer
