@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var sf =require('../');
+
+program
+  .version('0.0.1')
+  .option('-i, --input [input]', 'Specify the sf configuration xml')
+  .option('-o, --output [output]', 'Specify the output')
+  .parse(process.argv);
+
+sf.transfer(program.input, program.output);
+

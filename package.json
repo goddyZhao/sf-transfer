@@ -1,0 +1,21 @@
+{
+  "name": "sf-transfer",
+  "version": "0.0.1",
+  "description": "A cli tool to transfer sf combo rules to nproxy format",
+  "dependencies": {
+    "commander": "*",
+    "xml2js": "*"
+  },
+  "main": "./lib/sf",
+  "bin": {"sf": "./bin/sf"},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "proxy",
+    "combo"
+  ],
+  "author": "Goddy Zhao <goddy128@gmail.com> (http://goddyzhao.me)",
+  "license": "MIT"
+}
