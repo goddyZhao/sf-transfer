@@ -17,6 +17,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:goddyZhao/sf-transfer.git"
+  },
   "keywords": [
     "node.js",
     "proxy",
