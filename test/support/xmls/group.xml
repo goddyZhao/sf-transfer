@@ -1,0 +1,14 @@
+<groupdefinition>
+    <groups>
+        <group id="homepageGlobalCSS" type="global">
+            <resource uri="/ui/homepage/css/hmpDropMenu.css"/>
+            <resource uri="/ui/homepage/css/hmpTileLayout.css"/>
+            <resource uri="/ui/homepage/css/hmpTodoList.css"/>
+            <resource uri="/ui/homepage/css/hmpPanel.css"/>
+            <resource uri="/ui/homepage/css/hmpQuickLinks.css"/>
+            <resource uri="/ui/homepage/css/hmpGenericTiles.css"/>
+            <resource uri="/ui/homepage/css/hmpMyTeamTile.css"/>
+            <resource uri="/ui/homepage/css/hmpTileBrowser.css"/>
+        </group>
+    </groups>
+</groupdefinition>
