@@ -4,7 +4,13 @@
   "description": "A cli tool to transfer sf combo rules to nproxy format",
   "dependencies": {
     "commander": "*",
-    "xml2js": "*"
+    "xml2js": "*",
+    "step": "*"
+  },
+  "devDependencies":{
+    "mocha": "*",
+    "should": "*",
+    "wrench": "*"
   },
   "main": "./lib/sf",
   "bin": {"sf": "./bin/sf"},

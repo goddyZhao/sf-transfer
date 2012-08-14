@@ -1,0 +1,63 @@
+<groupdefinition>
+    <groups>
+        <group id="homepageTileFramework" type="global">
+			<resource uri="/ui/homepage/js/common/HMPUtil.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpAnimUtil.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpGenericTileDAO.js"/>
+			<resource uri="/ui/homepage/js/dropMenu/hmpAbstractMenuModel.js"/>
+			<resource uri="/ui/homepage/js/dropMenu/hmpArrayMenuModel.js"/>
+			<resource uri="/ui/homepage/js/dropMenu/hmpDropMenu.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpTile.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpLoadingTile.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpTileLayout.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpTileModel.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpAbstractTileDAO.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpErrorTile.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpAbstractTileFactory.js"/>
+			<resource uri="/ui/homepage/js/tileFramework/hmpMultiControllerTileDAO.js"/>
+			<resource uri="/ui/homepage/js/common/hmpLoadingIndicator.js"/>
+			<resource uri="/ui/homepage/js/common/hmpAutoCompleteFindMultipleUsers.js"/>
+			<resource uri="/ui/homepage/js/common/hmpProfileNavigationMenuModel.js"/>
+			<resource uri="/ui/homepage/js/common/hmpQuickCardMenuModel.js"/>
+			<resource uri="/ui/homepage/js/common/hmpClock.js"/>
+			<resource uri="/ui/homepage/js/common/hmpFilterInput.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpTileUtil.js"/>
+            <resource uri="/ui/homepage/js/home/hmpHomePageTileFactory.js"/>
+            <resource uri="/ui/homepage/js/home/hmpHomePageTileDAO.js"/>
+        </group>
+        <group id="homepageTilePlugins" type="global">
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatConversion.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatDAO.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatUtil.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatAction.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatItem.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatGroup.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatList.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatMini.js"/>
+			<resource uri="/ui/homepage/js/todoCompat/hmpTodoCompatTile.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpQuickLinksTile.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpAdminFavoritesTile.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpMyInfoTile.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpWelcomeTile.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpCyclePhotosTile.js"/>
+			<resource uri="/ui/homepage/js/tilePlugins/hmpAdminAlertsTile.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpMyTeamUtil.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpTeamList.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpJobReqList.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpMyTeamTileModel.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpTeamSlider.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpMyTeamColumnView.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpBadge.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpNote.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpNudge.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpMyTeamActionMenuModel.js"/>
+			<resource uri="/ui/homepage/js/myTeam/hmpMyTeamTile.js"/>
+            <resource uri="/ui/homepage/js/tilePlugins/hmpTileSample.js"/>
+            <resource uri="/ui/homepage/js/tilePlugins/hmpTileBrowserTile.js"/>
+        </group>
+        <group id="homepageSetupWizard" type="global">
+            <resource uri="/ui/homepage/js/setupWizard/hmpSetupWizard.js"/>
+            <resource uri="/ui/homepage/js/setupWizard/hmpSetupWizardDAO.js"/>
+        </group>
+    </groups>
+</groupdefinition>
