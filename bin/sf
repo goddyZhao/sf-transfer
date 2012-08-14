@@ -4,7 +4,7 @@ var program = require('commander');
 var sf =require('../');
 
 program
-  .version('0.0.2')
+  .version('0.0.3')
   .option('-i, --input [input]', 'Specify the sf configuration xml')
   .option('-o, --output [output]', 'Specify the output')
   .parse(process.argv);
