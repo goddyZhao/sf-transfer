@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "A cli tool to transfer sf combo rules to nproxy format",
   "dependencies": {
-    "commander": "*",
     "xml2js": "*",
     "step": "*"
   },
