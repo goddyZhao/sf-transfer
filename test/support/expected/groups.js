@@ -1,6 +1,6 @@
 module.exports = [
   {
-    pattern: 'url pattern',// pattern for homepageTileFramework
+    pattern: 'homepageTileFramework',// pattern for homepageTileFramework
     responder: {
       dir: 'fill the dir',
       src: [
@@ -31,7 +31,7 @@ module.exports = [
     }
   },
   {
-    pattern: 'url pattern',// pattern for homepageTilePlugins
+    pattern: 'homepageTilePlugins',// pattern for homepageTilePlugins
     responder: {
       dir: 'fill the dir',
       src: [
@@ -67,7 +67,7 @@ module.exports = [
     }
   },
   {
-    pattern: 'url pattern',// pattern for homepageSetupWizard
+    pattern: 'homepageSetupWizard',// pattern for homepageSetupWizard
     responder: {
       dir: 'fill the dir',
       src: [
@@ -75,5 +75,5 @@ module.exports = [
         '/ui/homepage/js/setupWizard/hmpSetupWizardDAO.js'
       ]
     }
-  },
+  }
 ];

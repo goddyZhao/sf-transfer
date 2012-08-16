@@ -1,6 +1,6 @@
 module.exports = [
   {
-    pattern: 'url pattern',// pattern for homepageGlobalCSS
+    pattern: 'homepageGlobalCSS',// pattern for homepageGlobalCSS
     responder: {
       dir: 'fill the dir',
       src: [
@@ -14,5 +14,5 @@ module.exports = [
         '/ui/homepage/css/hmpTileBrowser.css'
       ]
     }
-  },
+  }
 ];
