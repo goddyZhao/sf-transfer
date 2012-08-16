@@ -41,7 +41,7 @@ describe('sf', function(){
       var outputFile = path.join(outputDir, 'nproxy-rule.js');
       var expectedFile = path.join(expectedDir, 'group.js');
 
-      sf.transfer([inputFile], outputDir, false, function(err){
+      sf.transfer([inputFile], outputDir, null, false, function(err){
         if(!err){
           isTwoFileEqual(outputFile, expectedFile, function(err, result){
             if(!err){
@@ -58,7 +58,7 @@ describe('sf', function(){
       var outputFile = path.join(outputDir, 'nproxy-rule.js');
       var expectedFile = path.join(expectedDir, 'groups.js');
 
-      sf.transfer([inputFile], outputDir, false, function(err){
+      sf.transfer([inputFile], outputDir, null, false, function(err){
         if(!err){
           isTwoFileEqual(outputFile, expectedFile, function(err, result){
             if(!err){
@@ -78,7 +78,7 @@ describe('sf', function(){
       var outputFile = path.join(outputDir, 'nproxy-rule.js');
       var expectedFile = path.join(expectedDir, 'merged.js');
 
-      sf.transfer(inputFiles, outputDir, false, function(err){
+      sf.transfer(inputFiles, outputDir, null, false, function(err){
         if(!err){
           isTwoFileEqual(outputFile, expectedFile, function(err, result){
             if(!err){
@@ -102,7 +102,7 @@ describe('sf', function(){
           if(err){
             throw err;
           }
-            sf.transfer([inputFile], outputFile, true, function(err){
+            sf.transfer([inputFile], outputFile, null, true, function(err){
               if(!err){
                 isTwoFileEqual(outputFile, expectedFile, function(err, result){
                   if(err){
@@ -114,6 +114,23 @@ describe('sf', function(){
               }
             });
         });
+    });
+
+    it('should support specified dir when tranfering xml', function(done){
+      var inputFile = path.join(supportDir, 'xmls', 'group.xml');
+      var outputFile = path.join(outputDir, 'nproxy-rule.js');
+      var expectedFile = path.join(expectedDir, 'group-with-dir.js');
+
+      sf.transfer([inputFile], outputDir, 'dir', false, function(err){
+        if(!err){
+          isTwoFileEqual(outputFile, expectedFile, function(err, result){
+            if(!err){
+              result.should.be.ok;
+              done();
+            }
+          });
+        }
+      })
     });
 
     after(function(done){
