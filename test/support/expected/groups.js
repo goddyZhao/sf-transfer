@@ -75,5 +75,5 @@ module.exports = [
         '/ui/homepage/js/setupWizard/hmpSetupWizardDAO.js'
       ]
     }
-  }
+  }/*{{more}}*/
 ];

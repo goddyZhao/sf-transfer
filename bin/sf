@@ -1,13 +1,53 @@
 #!/usr/bin/env node
 
-var program = require('commander');
 var sf =require('../');
 
-program
-  .version('0.0.2')
-  .option('-i, --input [input]', 'Specify the sf configuration xml')
-  .option('-o, --output [output]', 'Specify the output')
-  .parse(process.argv);
+var args = process.argv;
 
-sf.transfer(program.input, program.output);
+var inputs = [];
+var output;
+var append = false;
+var isOutputSpecified = false;
+var outputFlagIndex;
 
+var inputRxp = /^(-i|--input)$/;
+var outputRxp = /^(-o|--output)$/;
+var appendRxp = /^(-a|--append)$/;
+
+if(!inputRxp.test(args[2])){
+  throw new Error('No --input!');
+}
+
+if(args.length < 4){
+  throw new Error('No input file specified!');
+}
+
+args = Array.prototype.slice.call(args,3);
+
+args.forEach(function(arg, i){
+  if(outputRxp.test(arg)){
+    isOutputSpecified = true;
+    outputFlagIndex = i;
+  }else if(appendRxp.test(arg)){
+    if(i !== args.length - 1){
+      throw new Error('-a or --append must be put as the last parameter');
+    }
+    append = true;
+    args = args.slice(0, args.length - 1);
+  }
+});
+
+args.forEach(function(arg, i){
+  if(!isOutputSpecified){
+    inputs.push(arg);
+    return;
+  }
+
+  if(i < outputFlagIndex){
+    inputs.push(arg);
+  }else if(i > outputFlagIndex){
+    output = output || arg;
+  }
+});
+
+sf.transfer(inputs, output, append);
