@@ -6,8 +6,19 @@
     npm install -g sf-transfer
 
 ## Usage
+    
+    // transfer input.xml to ~/workspace/nproxy-rule.js
+    sf -i input.xml -o ~/workspace 
 
-    sf -i input.xml -o ~/workspace
+    // transfer a bunch of xml to ~/workspace/nproxy-rule.js
+    sf -i xmls/*.xml -o ~/workspace
+
+    // append the transfered result from input.xml to ~/workspace/nproxy-rule.js
+    sf -i input.xml -o ~/workspace/nproxy-rule.js --append
+
+    // transfer the xml with specified dir to ~/workspace/nproxy-rule.js
+    sf -i input.xml -d your/local/dir -o ~/workspace
+
 
 ### More Options
 
