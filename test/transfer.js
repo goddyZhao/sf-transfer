@@ -44,7 +44,8 @@ describe('sf', function(){
       sf.transfer(inputFile, outputDir, function(err){
         if(!err){
           isTwoFileEqual(outputFile, expectedFile, function(err, result){
-            if(!err && result){
+            if(!err){
+              result.should.be.ok;
               done();
             }
           });
@@ -60,15 +61,14 @@ describe('sf', function(){
       sf.transfer(inputFile, outputDir, function(err){
         if(!err){
           isTwoFileEqual(outputFile, expectedFile, function(err, result){
-            if(!err && result){
+            if(!err){
+              result.should.be.ok;
               done();
             }
           })
         }
       })
     });
-
-
 
     after(function(done){
       wrench.rmdirRecursive(outputDir, function(err){
