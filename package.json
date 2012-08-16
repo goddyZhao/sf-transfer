@@ -1,6 +1,6 @@
 {
   "name": "sf-transfer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A cli tool to transfer sf combo rules to nproxy format",
   "dependencies": {
     "xml2js": "*",
